@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Montserrat&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="Author">
+			<h6>Matthew Shuck</h6>
+			<h6>mschuck1@stanford.edu</h6>
+			<h6>Maximilian Du</h6>
+			<h6>maxdu@stanford.edu</h6>
+		</div>
+		<h1>Maximum Ants Posteriori:</h1>
+		<h2>How Ants Use Bayes Rule to Find a Home</h2>
+		<div class="ContentWrapper">
+			<div class="Graphs">
+				<canvas id="HiveGraph" width="450" height="500"></canvas>
+				<div class="GraphContainer">
+					<div class="GraphLabel">Ant Distribution</div>
+					<canvas id="BarGraph" width="300" height="200"></canvas>
+					<div class="GraphLabel">Colony Estimate:</div>
+					<div class="GraphSubLabel">P(L<sub>i</sub> is best)</div>
+					<canvas id="ColGraph" width="300" height="100"></canvas>
+				</div>
+				<div class="GraphContainer">
+					<div class="GraphLabel">Colony Updated Beliefs</div>
+					<div class="GraphSubLabel">(Posterior Distributions)</div>
+					<canvas id="NormalGraph" width="450" height="325"></canvas>
+				</div>
+				<div class="GraphContainer">
+					<div class="NumberGraph">
+						<div class="NumberLabel">Time Step:</div>
+						<div id="TimeValue" class="Number">0</div>
+					</div>
+					<div class="NumberGraph">
+						<div class="NumberLabel">Tandem Run:</div>
+						<div id="TandemCount" class="Number">0</div>
+					</div>
+				</div>
+				<div class="GraphContainer">
+					<div class="GraphLabel">Individual Ant Observations</div>
+					<div class="GraphContainerVertical">
+						<canvas class="Observation" id="Observation1" width="170" height="170"></canvas>
+						<canvas class="Observation" id="Observation2" width="170" height="170"></canvas>
+						<canvas class="Observation" id="Observation3" width="170" height="170"></canvas>
+						<canvas class="Observation" id="Observation4" width="170" height="170"></canvas>
+						<canvas class="Observation" id="Observation5" width="170" height="170"></canvas>
+					</div>
+				</div>
+				<script src="scripts3.js"></script>
+			</div>
+			<div class="modelLabel">
+				<a href="/1">MODEL #1</a>
+				<a href="/2">MODEL #2</a>
+				<a href='/' class="active">MODEL #3</a>
+			</div>
+		</div>
+	</body>
+</html>
